@@ -1,0 +1,37 @@
+# Powerful Network Recon & Pentesting Automation Suite
+
+**Author:** Spooky_higgs_boson
+
+---
+
+## Overview
+
+`recon_suite.py` is a comprehensive Python-based automation toolkit designed for ethical penetration testers to perform extensive network reconnaissance, enumeration, and preliminary attack simulations on authorized target networks and hosts. It integrates a broad range of Kali Linux tools into a flexible, interactive, and modular framework allowing manual or fully automated scans.
+
+---
+
+## Features
+
+- **Network Discovery:** Scan local subnet to identify live hosts (IP and MAC addresses).
+- **Target Selection:** Choose a discovered host as the active target for further scans.
+- **Multiple Recon and Scan Tools Integrated:**
+  - Network mapping & OS detection via **Nmap**.
+  - Active network probing with **Bettercap**.
+  - Web server vulnerability scanning with **Nikto**, **DIRB**, **Gobuster**.
+  - Domain enumeration using **Amass** and **theHarvester**.
+  - Automated hostile scanning via **Legion**.
+  - Man-in-the-middle traffic capture with **mitmproxy** and **Ettercap**.
+- **Concurrent Execution:** Run all supported tools simultaneously using threading for efficiency.
+- **Modular Architecture:** Easily extensible with additional tools.
+- **Command-Line Interface:** Interactive menu-driven CLI for ease of use.
+- **Output Management:** All scan results saved to clearly named output files for offline analysis.
+
+---
+
+## Requirements
+
+- Kali Linux or a compatible penetration testing environment.
+- Python 3.x installed.
+- Root privileges for several tools (`bettercap`, `mitmproxy`, `ettercap` etc.).
+- Required tools installed and in your system PATH:
+
